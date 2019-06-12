@@ -1,0 +1,2 @@
+220 metasploitable.localdomain ESMTP Postfix (Ubuntu)
+220 (vsFTPd 2.3.4)
