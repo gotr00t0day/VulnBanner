@@ -3,7 +3,7 @@
 import socket 
 import os, sys
 
-# Vulnerable banner detection script
+# Vulnerable service banner detection script
 
 ip = "10.0.0.221"
 
