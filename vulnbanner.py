@@ -4,7 +4,7 @@ import socket
 import os, sys
 import threading
 
-# Vulnerable banner detection script - c0deninja
+# Vulnerable banner detection script
 
 ip = "10.0.0.221"
 
