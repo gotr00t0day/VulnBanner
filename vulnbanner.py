@@ -2,8 +2,9 @@
 
 import socket 
 import os, sys
+import threading
 
-# Vulnerable service banner detection script
+# Vulnerable banner detection script - c0deninja
 
 ip = "10.0.0.221"
 
@@ -40,4 +41,7 @@ def main():
         if banner:
             print ("{}/{} : {}".format(ip, port, banner))
             vulncheck(banner, filename)
+    t = threading.Thread(target=getbanner, args=(ip, port))
+    t.start()
+
 main()
