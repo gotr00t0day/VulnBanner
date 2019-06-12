@@ -5,6 +5,8 @@ import os, sys
 
 # Vulnerable banner detection script
 
+ip = "10.0.0.221"
+
 def getbanner(ip, port):
     try:
         socket.setdefaulttimeout(2)
@@ -34,7 +36,6 @@ def main():
         print ("Usage: " + str(sys.argv[0]) + " File.txt")
         exit(0)
     for port in range(1,80):
-        ip = "10.0.0.221"
         banner = getbanner(ip, port)
         if banner:
             print ("{}/{} : {}".format(ip, port, banner))
