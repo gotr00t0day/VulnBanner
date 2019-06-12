@@ -3,7 +3,7 @@
 import socket 
 import os, sys
 
-# Vulnerable banner detection script - c0deninja
+# Vulnerable banner detection script
 
 def getbanner(ip, port):
     try:
